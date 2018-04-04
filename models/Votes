@@ -1,0 +1,23 @@
+module.exports = (sequelize, DataTypes) => {
+  return sequelize.define('votes', {
+    id: {
+      type: sequelize.INTEGER,
+      primaryKey: true
+    },
+    uuid: {
+      type: sequelize.STRING(38)
+    },
+    fact_id: {
+      type: sequelize.INTEGER
+    },
+    value: {
+      type: sequelize.TEXT('tiny')
+    },
+    createdAt: {
+      type: sequelize.DATE
+    },
+    updatedAt: {
+      type: sequelize.DATE
+    }
+  })
+}

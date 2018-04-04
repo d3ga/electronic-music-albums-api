@@ -1,0 +1,23 @@
+h2= title
+
+form(action='' method='post')
+
+      label(for='title') Title
+      br
+      input(type='text'
+            placeholder='fact-title' 
+            name='title'
+            id='title'
+            value=(fact.title || '')
+            )
+      br
+      label(for='title') Text
+      br
+      textarea(type='text'
+            placeholder='fact-text' 
+            name='text'
+            id='text'
+            rows='10'
+            )=(fact.text || '')
+      br
+      input(type='submit' value='Submit')
