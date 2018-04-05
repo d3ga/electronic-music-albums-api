@@ -1,20 +1,25 @@
 h2= title
 
 form(action='' method='post')
-
-      label(for='title') Title
+      label(for='band') Band
       br
-      input(type='text'
-            placeholder='fact-title' 
-            name='title'
-            id='title'
-            value=(fact.title || '')
+      input(type='text' 
+            name='artist'
+            id='artist'
+            value=(fact.artist || '')
             )
       br
-      label(for='title') Text
+      label(for='album-title') Album Title
+      br
+      input(type='text' 
+            name='album'
+            id='album'
+            value=(fact.album || '')
+            )
+      br
+      label(for='title') Album Description
       br
       textarea(type='text'
-            placeholder='fact-text' 
             name='text'
             id='text'
             rows='10'

@@ -2,7 +2,11 @@ const mongoose = require('mongoose')
 mongoose.Promise = global.Promise
 
 const factsSchema = new mongoose.Schema({
-  title: {
+  artist: {
+    type: String,
+    trim: true
+  },
+  album: {
     type: String,
     trim: true
   },
