@@ -6,12 +6,12 @@ const { catchErrors } = require('../handlers/errorHandlers');
 // The main route
 router.get('/facts', catchErrors(FactsController.getFacts))
 
-// Getting fact by id
-router.get('/facts/:id', catchErrors(FactsController.getFactById))
-
 // Submitting a fact
 router.get('/facts/add', FactsController.factsForm)
 router.post('/facts/add', catchErrors(FactsController.submitFact))
+
+// Getting fact by id
+router.get('/facts/:id', catchErrors(FactsController.getFactById))
 
 // Editing a Fact
 router.get('/facts/:id/edit', catchErrors(FactsController.editFact))

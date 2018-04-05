@@ -26,7 +26,7 @@ exports.getFacts = async (req, res) => {
   const pages = Math.ceil(count / limit)
 
   res.json(facts);
-};
+}
 
 exports.getFactById = async (req, res) => {
   const fact = await Facts.findOne({ _id: req.params.id })
