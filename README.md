@@ -1,2 +1,22 @@
-An API for electronic music albums
-source: https://www.discogs.com/lists/Top-20-Electronic-Albums-of-all-time/13330
+# Electronic Music Albums API
+
+**_This API is build for my own educational purposes._**
+
+A simple API build with node.js. User can get, edit or delete albums from the database by visiting the corresponding endpoints. Adding a new album is done through the dedicated form.
+
+## Endpoints
+
+**Main Route:**
+/facts
+
+**Add an Album:**
+/facts/add
+
+**Getting a Album by ID:**
+/facts/:id
+
+**Edit an Album:**
+/facts/:id/edit
+
+**Deleting an Album:**
+/facts/:id/delete
