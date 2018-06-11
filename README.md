@@ -7,16 +7,16 @@ A simple API build with node.js. User can get, edit or delete albums from the da
 ## Endpoints
 
 **Main Route:**
-/facts
+```/facts```
 
 **Add an Album:**
-/facts/add
+```/facts/add```
 
 **Getting a Album by ID:**
-/facts/:id
+```/facts/:id```
 
 **Edit an Album:**
-/facts/:id/edit
+```/facts/:id/edit```
 
 **Deleting an Album:**
-/facts/:id/delete
+```/facts/:id/delete```
